@@ -1,0 +1,5 @@
+spring.oauth2.resource:
+  id: cloud_controller
+  jwt:
+    key-uri: http://localhost:9020/oauth/token_key
+        
