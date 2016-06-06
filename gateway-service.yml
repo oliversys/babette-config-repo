@@ -2,13 +2,13 @@ security:
   sessions: NEVER
   oauth2:
     client:
-#      client-id: mobile
-#      client-secret: 
-#      scope: read,write
-#      auto-approve-scopes: '.*'
-      tokenValidityInSeconds=1800
-      accessTokenUri: http://localhost:9999/babette/token
-      userAuthorizationUri: http://localhost:9999/babette/authorize
+    client-id: mobile
+    client-secret: 12345
+    scope: read,write
+    auto-approve-scopes: '.*'
+    tokenValidityInSeconds=1800
+    accessTokenUri: http://localhost:9999/babette/token
+    userAuthorizationUri: http://localhost:9999/babette/authorize
       
 facebook:
   client:
