@@ -11,3 +11,28 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     preferIpAddress: true
+    
+spring.datasource:
+    initialize: true
+    url: jdbc:hsqldb:mem:oauth2
+#    username: DEV01_OAUTH_SEC_APP
+#    password: "DEV01_OAUTH_SEC_APP#765"
+    driver-class-name: org.hsqldb.jdbcDriver
+    continue-on-error: true
+ #   validation-query: SELECT 1 FROM DUAL
+    initial-size: 5
+    max-active: 10
+    max-idle: 5
+    min-idle: 2
+    test-on-borrow: false
+    remove-abandoned: true
+
+---
+spring.profiles: dev
+
+spring.main.show_banner: false
+
+server.tomcat:
+  access-log-enabled: true
+  access-log-pattern: "%{X-Forwarded-For}i %l %u %t %r %s %b %{User-Agent}i %{Referer}i - %T"
+  basedir: /var/log/inka/tomcat    
