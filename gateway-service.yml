@@ -7,8 +7,8 @@ security:
     scope: read,write
     auto-approve-scopes: '.*'
     tokenValidityInSeconds=1800
-    accessTokenUri: http://localhost:9999/babette/token
-    userAuthorizationUri: http://localhost:9999/babette/authorize
+    accessTokenUri: http://localhost:9020/babette/token
+    userAuthorizationUri: http://localhost:9020/babette/authorize
       
 facebook:
   client:
