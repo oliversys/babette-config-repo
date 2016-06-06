@@ -1,11 +1,11 @@
 security:
-  sessions: ALWAYS
+  sessions: NEVER
   oauth2:
     client:
-      client-id: babettenosalao
-      client-secret: senha
-      scope: read,write
-      auto-approve-scopes: '.*'
+#      client-id: mobile
+#      client-secret: 
+#      scope: read,write
+#      auto-approve-scopes: '.*'
       tokenValidityInSeconds=1800
       accessTokenUri: http://localhost:9999/babette/token
       userAuthorizationUri: http://localhost:9999/babette/authorize
